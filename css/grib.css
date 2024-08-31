@@ -1,0 +1,39 @@
+/*quitar las margenes*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*regilla*/
+main{
+    width: 100vw;
+    height: 100vh;
+    display:grid;
+    grid-template-columns:25% 25% 25% 25%;
+    grid-template-rows: 80px 80px auto 100px;
+    grid-template-areas:
+    /*punto es vacio*/
+    /*area de 4*4 "1 2 3 4"*/
+    "h . n n"
+    "h s s s"
+    "h s s s"
+    " . pepito pepito pepito"
+    ;
+
+}
+
+header{
+    background-color: #00ffff;
+    grid-area: h;
+}
+nav{
+    background-color: #16c297;
+    grid-area: n;
+}
+section{
+    background-color: #006400;
+    grid-area: s;
+}
+footer{
+    background-color: #b7db18;
+    grid-area: pepito;
+}
