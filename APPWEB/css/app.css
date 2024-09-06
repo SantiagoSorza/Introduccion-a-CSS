@@ -1,0 +1,29 @@
+.c1{
+    color: red;
+    border: 2px solid red;
+    padding: 16px;
+    width: 340px;
+    transition: background 1s 2s;
+}
+
+@media screen and (max-width: 600px){
+    .c1{
+        width: 100%;
+    }
+
+    .c2{
+        color: white;
+        border: 0px ;
+        background-color: red;
+    }
+}
+div{
+    width: 90vw;
+    height: 80vh;
+    border: 2px solid red;
+    overflow: auto; 
+    overflow: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
